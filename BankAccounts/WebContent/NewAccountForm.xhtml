@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+      <h:form>
+      
+ Account ID:    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <h:inputText  value="#{accI.accountId}"></h:inputText><br></br><br></br>
+      
+ Account Type:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <h:inputText  value="#{accI.accountType}"></h:inputText><br></br><br></br>
+      
+ Accountholder Name:   &nbsp; &nbsp;   <h:inputText  value="#{accI.accountHolderName}"></h:inputText><br></br><br></br>
+      
+ Accountholder Contact:    &nbsp; <h:inputText value="#{accI.accountHolderContact}"></h:inputText><br></br><br></br>
+      
+ Account Balance:    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <h:inputText value="#{accI.accountBalance}"></h:inputText><br></br><br></br>
+   
+ Account Setup Date:&nbsp; &nbsp; &nbsp; &nbsp;     <h:inputText value="#{accI.accountSetupDate}"></h:inputText><br></br><br></br>
+     
+      
+      	<h:commandButton value="Add Account"  action="#{con.insert(accI)}"></h:commandButton>
+ 
+      </h:form>
+        
+</html>
